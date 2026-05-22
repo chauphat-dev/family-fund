@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postinstall": "npm install --prefix src/contracts/family-fund && npm run build --prefix src/contracts/family-fund",
     "lint": "eslint .",
     "preview": "vite preview"
   },
